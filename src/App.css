@@ -1,0 +1,202 @@
+body {
+  font-size: larger;
+  background-color: rgb(13, 13, 13);
+  font-family: "calibri";
+  max-height: auto;
+  max-width: auto;
+}
+
+h1  {
+  text-decoration: underline;
+  text-align: center;
+}
+
+p {
+  margin: 10px;
+  text-align: center;
+}
+
+.Kassa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.App {   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;  
+  width: 1890px;
+  height: 1050px;
+  padding: 4px;
+  background-color: (13, 13, 13);
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab {
+  width: 480px;
+}
+
+.navc {
+  width: 200px;
+}
+
+.nav {  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgb(13, 13, 13);
+  box-shadow: 0px 0px 5px #fff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  min-width: 66px;
+  font-size: large;
+  font-family: "calibri";
+   align-items: center;
+  justify-items: center;
+}
+
+#btn {  
+  margin-left: 4px;
+  margin-right: 4px;
+  margin: 4px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 5px #fff;
+  background-color:  rgb(13, 13, 13);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  min-width: 66px;
+  font-size: large;
+  font-family: "calibri";
+   align-items: center;
+  justify-items: center;
+  text-align: center;
+  text-justify: center;
+}
+
+.nav:hover,
+#btn:hover,
+.navP:hover {
+  border: 3px solid #fff;
+  background-color: rgb(0, 255, 255);
+  box-shadow: 0px 0px 10px #fff;
+  color: #fff;
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+}
+
+  .navP {
+    font-family: "calibri";
+    margin: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 5px #fff;
+    background-color:  rgb(13, 13, 13);
+    text-align: center;
+  }
+.active-profile {
+  background-color: rgb(0, 225, 255);
+
+box-shadow: 0px 0px 5px rgb(0, 255, 255);
+}
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  font-family: calibri;
+  background-color:rgb(26, 26, 26);
+  margin: 4px; 
+  padding: 4px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px #fff;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavbarT  {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  font-family: calibri;
+  background-color:rgb(26, 26, 26);
+  margin: 4px; 
+  padding: 4px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px #fff;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tisch {
+  display: flex;
+  flex-direction: column;
+  width: 1850px;
+  height: 790px;
+  overflow: auto;
+  align-items: center;
+}
+.TBK {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 840px;
+  overflow: auto;
+}
+.Order {
+  height: 580px;
+  margin: none;
+  overflow: auto;
+}
+
+#Bon {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 80px;
+  margin: 4px;
+}
+
+.Bon {
+  width: 400px;
+  overflow: auto;
+}
+
+.Bill {
+  overflow: auto;
+  height: 840px;
+}
+
+.tableBill {
+  min-width: 100px;
+}
