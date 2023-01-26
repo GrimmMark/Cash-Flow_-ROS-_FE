@@ -120,10 +120,13 @@ export const Tagesumsatz = () => {
           ))}
         </tbody>
       </table>
-      <h2> Gesamt: {sum}€ Brutto</h2>
-      <h3> Tagesumsatz Bediener1: {sum1}€ {" "} __ {proportion1}%</h3>
-      <h3> Tagesumsatz Bediener2: {sum2}€ {" "} __ {proportion2}%</h3>
-      <h3> Tagesumsatz Bediener3: {sum3}€ {" "} __ {proportion3}%</h3>
+      <h1> Gesamt: {sum}€ Brutto</h1>
+      <h3> Tagesumsatz Bediener1: {sum1}€ {" "}</h3>
+      <p>{proportion1}%</p>
+      <h3> Tagesumsatz Bediener2: {sum2}€ {" "}</h3>
+      <p>{proportion2}%</p>
+      <h3> Tagesumsatz Bediener3: {sum3}€ {" "}</h3>
+      <p>{proportion3}%</p>
     </div>
   );
 };
