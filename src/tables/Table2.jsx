@@ -78,7 +78,7 @@ export const Table2 = () => {
               <th>Nr</th>
               <th>Name</th>
               <th>Bediener</th>
-              <th>Uhreit</th>
+              <th>Uhrzeit</th>
               <th>Preis</th>
             </tr>
           </thead>
