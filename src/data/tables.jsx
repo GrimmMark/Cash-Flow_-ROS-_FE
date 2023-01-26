@@ -33,12 +33,12 @@ export const tables = [
     ID: 5,
     name: 'Table6',
     Bediener: 'Bediener1',
-    },
-    {
-      ID: 6,
-      name: 'Table7',
-      Bediener: 'Bediener1',
-    },
+  },
+  {
+    ID: 6,
+    name: 'Table7',
+    Bediener: 'Bediener1',
+  },
   {
     ID: 7,
     name: 'Table8',
@@ -54,6 +54,6 @@ export const tables = [
     name: 'Table10',
     Bediener: 'Bediener1',
   },
-  
+
 
 ];

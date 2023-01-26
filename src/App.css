@@ -6,7 +6,7 @@ body {
   max-width: auto;
 }
 
-h1  {
+h1 {
   text-decoration: underline;
   text-align: center;
 }
@@ -22,16 +22,15 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 99vh;
 }
 
-
-.App {   
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  text-align: center;  
+  text-align: center;
   width: 1890px;
   height: 1050px;
   padding: 4px;
@@ -51,9 +50,9 @@ p {
   width: 200px;
 }
 
-.nav {  
-  margin-left: 20px;
-  margin-right: 20px;
+.nav {
+  margin-left: 30px;
+  margin-right: 30px;
   padding: 8px;
   color: #fff;
   border-radius: 5px;
@@ -62,14 +61,14 @@ p {
   box-shadow: 0px 0px 5px #fff;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  min-width: 66px;
+  min-width: 80px;
   font-size: large;
   font-family: "calibri";
-   align-items: center;
+  align-items: center;
   justify-items: center;
 }
 
-#btn {  
+#btn {
   margin-left: 4px;
   margin-right: 4px;
   margin: 4px;
@@ -78,13 +77,13 @@ p {
   border-radius: 5px;
   border: 1px solid #fff;
   box-shadow: 0px 0px 5px #fff;
-  background-color:  rgb(13, 13, 13);
+  background-color: rgb(13, 13, 13);
   text-align: center;
   transition: all 0.3s ease-in-out;
   min-width: 66px;
   font-size: large;
   font-family: "calibri";
-   align-items: center;
+  align-items: center;
   justify-items: center;
   text-align: center;
   text-justify: center;
@@ -94,9 +93,9 @@ p {
 #btn:hover,
 .navP:hover {
   border: 3px solid #fff;
-  background-color: rgb(0, 255, 255);
+  background-color: rgb(166, 266, 266);
   box-shadow: 0px 0px 10px #fff;
-  color: #fff;
+  color: rgb(13, 13, 13);
   transform: scale(1.01);
   -webkit-transform: scale(1.01);
   -moz-transform: scale(1.01);
@@ -104,31 +103,33 @@ p {
   -o-transform: scale(1.01);
 }
 
-  .navP {
-    font-family: "calibri";
-    margin: 2px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 4px;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    box-shadow: 0px 0px 5px #fff;
-    background-color:  rgb(13, 13, 13);
-    text-align: center;
-  }
-.active-profile {
-  background-color: rgb(0, 225, 255);
-
-box-shadow: 0px 0px 5px rgb(0, 255, 255);
+.navP {
+  font-family: "calibri";
+  margin: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 5px #fff;
+  background-color: rgb(13, 13, 13);
+  text-align: center;
 }
+
+.active-profile {
+  background-color: rgb(166, 266, 266);
+  color: rgb(13, 13, 13);
+  box-shadow: 0px 0px 5px rgb(0, 255, 255);
+}
+
 .Navbar {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
   font-family: calibri;
-  background-color:rgb(26, 26, 26);
-  margin: 4px; 
+  background-color: rgb(26, 26, 26);
+  margin: 4px;
   padding: 4px;
   border: 2px solid #fff;
   border-radius: 8px;
@@ -140,20 +141,20 @@ box-shadow: 0px 0px 5px rgb(0, 255, 255);
   justify-content: center;
 }
 
-.NavbarT  {
+.NavbarT {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
   font-family: calibri;
-  background-color:rgb(26, 26, 26);
-  margin: 4px; 
+  background-color: rgb(26, 26, 26);
+  margin: 4px;
   padding: 4px;
   border: 2px solid #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 4px #fff;
   transition: all 0.3s ease-in-out;
-  width: 100%;
-  height: 100px;
+  width: 99%;
+
   align-items: center;
   justify-content: center;
 }
@@ -166,13 +167,15 @@ box-shadow: 0px 0px 5px rgb(0, 255, 255);
   overflow: auto;
   align-items: center;
 }
+
 .TBK {
   display: flex;
   flex-direction: column;
   width: 800px;
-  height: 840px;
+  height: 800px;
   overflow: auto;
 }
+
 .Order {
   height: 580px;
   margin: none;
@@ -183,7 +186,7 @@ box-shadow: 0px 0px 5px rgb(0, 255, 255);
   display: flex;
   flex-direction: row;
   height: 40px;
-  width: 80px;
+  width: 100px;
   margin: 4px;
 }
 
@@ -194,7 +197,7 @@ box-shadow: 0px 0px 5px rgb(0, 255, 255);
 
 .Bill {
   overflow: auto;
-  height: 840px;
+  height: 800px;
 }
 
 .tableBill {

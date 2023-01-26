@@ -6,7 +6,7 @@ import { Products } from "../data/products"
 
 export const Table9 = () => {
 
-    const { allOrders, setAllOrders, currentProfile } = useContext(AppContext);
+  const { allOrders, setAllOrders, currentProfile } = useContext(AppContext);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const unpaidOrders = allOrders.filter(o => o.table === "Tisch9" && o.bill === false);
   const sum = unpaidOrders.reduce((total, order) => total + order.price, 0).toFixed(2);
@@ -31,7 +31,8 @@ export const Table9 = () => {
       ready: false,
       bill: false,
       paid: false,
-      invoice: false
+      invoice: false,
+      EC: false
     };
     setAllOrders([...allOrders, newOrder]);
   };
@@ -71,12 +72,12 @@ export const Table9 = () => {
     <div className="Tisch">
       <h2>Tisch9</h2>
       <div className='Tisch'>
-      <table className='tab'>
+        <table className='tab'>
           <thead>
             <tr>
-            <th>Nr</th>
+              <th>Nr</th>
               <th>Name</th>
-              <th>Bediener</th>            
+              <th>Bediener</th>
               <th>Uhreit</th>
               <th>Preis</th>
             </tr>
@@ -86,9 +87,9 @@ export const Table9 = () => {
               <tr key={order.Nr}>
                 <td>{order.Nr}</td>
                 <td>{order.name}</td>
-                <td>{order.bediener}</td>                
+                <td>{order.bediener}</td>
                 <td>{order.time}</td>
-                <td>{order.price} €</td>
+                <td>{order.price}0 €</td>
               </tr>
             ))}
           </tbody>
@@ -97,7 +98,7 @@ export const Table9 = () => {
         <button id="btn" onClick={() => handlePay()} disabled={unpaidOrders.length === 0}> Bezahlen</button>
       </div>
       <div className="navbar">
-        <button className='nav' onClick={handleClick}>Add Order</button>
+        <button className='nav' onClick={handleClick}>Neue Bestellung</button>
       </div>
       {isNavOpen && (
         <div className="NavbarT">

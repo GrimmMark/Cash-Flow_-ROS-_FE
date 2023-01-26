@@ -12,6 +12,11 @@ export const Bill = () => {
         const updatedOrders = allOrders.map(o => o.paid === false && o.bill === true ? { ...o, paid: true } : o)
         setAllOrders(updatedOrders)
     };
+    const handleClick2 = (paid) => {
+        const updatedOrder = { ...paid, paid: true, EC: true }
+        const updatedOrders = allOrders.map(o => o.paid === false && o.bill === true ? { ...o, paid: true, EC: true } : o)
+        setAllOrders(updatedOrders)
+    };
     const paid = allOrders.filter((paid) => paid.bill === true && paid.paid === false);
 
     return (
@@ -59,7 +64,7 @@ export const Bill = () => {
                             <td>{" "}</td>
                             <td>{" "}</td>
                             <td>{" "}</td>
-                            <td>{order.price}0€</td>
+                            <td>{order.price}0 €</td>
                         </tr>))}
                 </tbody>
             </table>
@@ -68,7 +73,8 @@ export const Bill = () => {
             <hr></hr>
             <h2>See you again!</h2>
             <hr></hr>
-            <button id="btn" onClick={() => handleClick(paid)}> Print </button>
+            <button id="btn" onClick={() => handleClick(paid)}> Bar </button>
+            <button id="btn" onClick={() => handleClick2(paid)}> EC </button>
         </div>
     );
 }

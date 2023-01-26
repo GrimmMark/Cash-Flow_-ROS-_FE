@@ -75,7 +75,7 @@ function App() {
               <Route path="/Bediener3" id="relement" element={<Bediener3 />} />
               <Route path="/AlleBestellungen" id="relement" element={<AlleBestellungen />} />
               <Route path="/OffeneBestellungen" id="relement" element={<OffeneBestellungen />} />
-              <Route path="/Tagesumsatz" id="relement" element={<Tagesumsatz />} />          
+              <Route path="/Tagesumsatz" id="relement" element={<Tagesumsatz />} />
               <Route path="/ProfileSelect" id="relement" element={<ProfileSelect />} />
             </Routes>
           </div>

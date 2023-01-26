@@ -6,21 +6,21 @@ export const ProfileSelect = () => {
 
   return (
     <div className="Navbar">
-      <button 
+      <button
         className={
           currentProfile === 'Bediener1' ? 'nav active-profile' : 'navP'
         }
         onClick={() => setCurrentProfile('Bediener1')}>
         Bediener1
       </button>
-      <button 
+      <button
         className={
           currentProfile === 'Bediener2' ? 'nav active-profile' : 'navP'
         }
         onClick={() => setCurrentProfile('Bediener2')}>
         Bediener2
       </button>
-      <button      
+      <button
         className={
           currentProfile === 'Bediener3' ? 'nav active-profile' : 'navP'
         }

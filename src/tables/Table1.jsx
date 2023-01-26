@@ -33,7 +33,8 @@ export const Table1 = () => {
       ready: false,
       bill: false,
       paid: false,
-      invoice: false
+      invoice: false,
+      EC: false
     };
     setAllOrders([...allOrders, newOrder]);
   };
@@ -75,9 +76,9 @@ export const Table1 = () => {
         <table className='tab'>
           <thead>
             <tr>
-            <th>Nr</th>
+              <th>Nr</th>
               <th>Name</th>
-              <th>Bediener</th>            
+              <th>Bediener</th>
               <th>Uhreit</th>
               <th>Preis</th>
             </tr>
@@ -87,9 +88,9 @@ export const Table1 = () => {
               <tr key={order.Nr}>
                 <td>{order.Nr}</td>
                 <td>{order.name}</td>
-                <td>{order.bediener}</td>                
+                <td>{order.bediener}</td>
                 <td>{order.time}</td>
-                <td>{order.price} €</td>
+                <td>{order.price}0 €</td>
               </tr>
             ))}
           </tbody>
@@ -99,7 +100,7 @@ export const Table1 = () => {
 
       </div>
       <div className="navbar">
-        <button className='nav' onClick={handleClick}>Add Order</button>
+        <button className='nav' onClick={handleClick}>Neue Bestellung</button>
       </div>
       {isNavOpen && (
         <div className="NavbarT">

@@ -101,7 +101,7 @@ export const Products = [
   },
   {
     ID: 18,
-    name: 'grappa',
+    name: 'Grappa',
     cat: 'drink',
     price: 4.80,
   },

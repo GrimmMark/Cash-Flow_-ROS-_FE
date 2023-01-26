@@ -17,7 +17,7 @@ export const allOrders = () => {
       price: 3.80,
       table: Table1,
       bediener: Bediener1,
-      date: new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}),
+      date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
       time: new Date().toLocaleString(currentTime),
       ready: false,
       bill: false,
@@ -25,7 +25,7 @@ export const allOrders = () => {
       invoice: false,
       EC: false
     },
-    {...AppContext}
+    { ...AppContext }
 
   ];
 }
