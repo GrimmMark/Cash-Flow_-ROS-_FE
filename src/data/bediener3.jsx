@@ -67,7 +67,7 @@ export const Bediener3 = () => {
           {allOrders.filter((day) => day.date === new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
             && (day.paid == true) && (day.bediener == "Bediener3" && day.invoice == false)).map((order) => (
               <tr key={order.Nr}>
-           <td>{order.Nr}</td>
+            <td>{order.Nr}</td>
               <td>{" "}</td>
               <td>{" "}</td>
               <td>{" "}</td>

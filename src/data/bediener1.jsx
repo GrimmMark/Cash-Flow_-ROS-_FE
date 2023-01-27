@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { AppContext } from '../App';
+import { Link } from 'react-router-dom';
 
 export const Bediener1 = () => {
 
@@ -11,7 +12,6 @@ export const Bediener1 = () => {
   const sum3 = allOrders.filter((day) => day.date === new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     && (day.paid == true) && (day.bediener == "Bediener1") && (day.EC == true)).reduce((total, order) => total + order.price, 0).toFixed(2);
   const sum4 = (sum1 - sum3).toFixed(2);
-
   const handleClick = () => {
     const updatedOrders = allOrders.map(o => o.bediener === "Bediener1" && o.invoice === false ? { ...o, invoice: true } : o)
     setAllOrders(updatedOrders)
@@ -23,8 +23,8 @@ export const Bediener1 = () => {
       <h1>Tagesumsatz Bediener1</h1>
       <table>
         <thead>
-        <tr>
-            <th>Nr</th>
+          <tr>
+          <th>Nr</th>
             <td>{" "}</td>
             <td>{" "}</td>
             <td>{" "}</td>
@@ -67,7 +67,7 @@ export const Bediener1 = () => {
           {allOrders.filter((day) => day.date === new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
             && (day.paid == true) && (day.bediener == "Bediener1" && day.invoice == false)).map((order) => (
               <tr key={order.Nr}>
-             <td>{order.Nr}</td>
+            <td>{order.Nr}</td>
               <td>{" "}</td>
               <td>{" "}</td>
               <td>{" "}</td>
@@ -113,5 +113,4 @@ export const Bediener1 = () => {
       <button id="btn" onClick={() => handleClick()}> Print </button>
     </div>
   );
-
 };

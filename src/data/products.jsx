@@ -169,6 +169,7 @@ export const Products = [
     ID: 110,
     name: 'Filetsteak',
     cat: 'Haupt',
+    price: 27.50,
   },
   {
     ID: 111,

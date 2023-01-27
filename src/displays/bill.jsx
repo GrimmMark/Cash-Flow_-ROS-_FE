@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const Bill = () => {
 
     const { allOrders, setAllOrders } = useContext(AppContext);
-    const sum = allOrders.filter((table) => table.bill === true).map((order) => order.price).reduce((total, price) => total + price, 0).toFixed(2);
+    const sum = allOrders.filter((table) => (table.bill === true) && (table.paid === false)).map((order) => order.price).reduce((total, price) => total + price, 0).toFixed(2);
     const tax = (sum * 0.19).toFixed(2);
     const handleClick = (paid) => {
         const updatedOrder = { ...paid, paid: true }
@@ -13,7 +13,7 @@ export const Bill = () => {
         setAllOrders(updatedOrders)
     };
     const handleClick2 = (paid) => {
-        const updatedOrder = { ...paid, paid: true, EC: true }
+        const updatedOrder = { ...paid, paid: true} && {...paid, EC: true }
         const updatedOrders = allOrders.map(o => o.paid === false && o.bill === true ? { ...o, paid: true, EC: true } : o)
         setAllOrders(updatedOrders)
     };
